@@ -16,6 +16,11 @@ let largeNumber = [25, 50, 75, 100];
 let smallNumber = [1,2,3,4,5,6,7,8,9];
 let randomLargeNumber = Math.floor(Math.random() * largeNumber.length);
 let randomSmallNumber = Math.floor(Math.random() * smallNumber.length);
+//Need to add additional rules.  Large numbers can only be selected once.
+//so if 25 is chosen, it can't be chosen again, but can choose 50, 75 or 100
+//maybe use pop() to choose number then remove from array?
+//small numbers can be selected multiple times
+//Can only choose up to 6 numbers.  Max 4 large as only 4 large numbers available
 
 
 //add event listener when clicked to generate random number in the output p tag
