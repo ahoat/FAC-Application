@@ -43,6 +43,4 @@ console.log (selectedSmall());
 
 generate.addEventListener("click", function () {
     targetNum.innerText = randomNumber();
-}
-    
-    );
+});
