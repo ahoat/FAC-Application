@@ -1,3 +1,22 @@
 body {
     background-color: green;
 }
+
+#selectedNumbers{
+    width: 400px;
+    height: 20px;
+
+}
+.numbers li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 2px solid #000;
+    height: 50px;
+    width: 50px;
+    float: left;
+    
+
+    
+}
