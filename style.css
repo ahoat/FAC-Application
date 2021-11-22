@@ -1,24 +1,49 @@
 body {
-    background-color: green;
+    font-family: 'Englebert', sans-serif;
+    background-color: #99C5D0;
+    
 }
-
-#selectedNumbers{
-    width: 400px;
-    height: 20px;
-
-}
-.numbers li{
+#game{
+    background-color: #4198F2;
+    border: 2px solid black;
+    border-radius: 15px;
+    height: 400px;
+    width: 300px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
     flex-wrap: wrap;
-    border: 2px solid #000;
-    height: 50px;
-    width: 50px;
-    float: left;
+    justify-content: center;
+    
 }
 
-.target {
+.targetNumber{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 15px;
+    border-radius:15px;
+    border: 1px solid black
     font-size: 50px;
     font-family: 'Orbitron', sans-serif;
+    
+    
 }
+
+#selectedNumbers li{
+    
+    
+}
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+
+
+

@@ -9,7 +9,7 @@ const startTimer = document.querySelector('#start');
 function randomNumber(min, max) {
     min = Math.ceil(100);
     max = Math.floor(999);
-    return Math.floor(Math.random() * (max - min)+min);
+    return Math.floor(Math.random() * (max - min) + min);
 }
 
 
@@ -38,9 +38,20 @@ console.log (selectedSmall());
 //Can only choose up to 6 numbers.  Max 4 large as only 4 large numbers available
 
 
-//add event listener when clicked to generate random number in the output p tag
-
+//add event listener for buttons
 
 generate.addEventListener("click", function () {
     targetNum.innerText = randomNumber();
+});
+
+startTimer.addEventListener("click", function() {
+    console.log("timer click");
+});
+
+largeNum.addEventListener("click", function() {
+    console.log("Large number click");
+});
+
+smallNum.addEventListener("click", function() {
+    console.log("Small number click");
 });

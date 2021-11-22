@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link href="https://fonts.googleapis.com/css2?family=Englebert&family=Orbitron:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     
@@ -12,24 +12,29 @@
 </head>
 <body>
     <h2>Hi</h2>
+<div id="game">
+        <div class="targetNumber">
+        <p class="target">Press Generate</p>
+        </div>
 
-    
-    <p class="target">Press Generate</p>
-    <div id="selectedNumbers">
-        <ul class="numbers">
-            <li>1st</li>
-            <li>2nd</li>
-            <li>3rd</li>
-            <li>4th</li>
-            <li>5th</li>
-            <li>6th</li>
-        </ul>
+        <div id="selectedNumbers">
+            <ul>
+                <li>1st</li>
+                <li>2nd</li>
+                <li>3rd</li>
+                <li>4th</li>
+                <li>5th</li>
+                <li>6th</li>
+            </ul>
+        </div>
+        <div class="btn">
+        <button id="large">Large</button>
+        <button id="small">Small</button>
+        <button id="generate">Generate</button>
+        <button id="start">Start Timer</button>
+        </div>
+    <br><br>
     </div>
-    <button id="large">Large</button>
-    <button id="small">Small</button>
-    <button id="generate">Generate</button>
-    <button id="start">Start Timer</button>
-    
     <script src="script.js"></script>
 </body>
 </html>
