@@ -1,6 +1,6 @@
 body {
     font-family: 'Englebert', sans-serif;
-    background: linear-gradient(90deg,#e66465, #3f87ac);
+    background: linear-gradient(90deg,#565D61, #3f87ac);
     
 }
 
@@ -11,7 +11,20 @@ body {
 
 }
 
-
+h3{
+    background-color: lightgray;
+    padding: 1rem;
+    border-radius: 10px;
+    position: sticky;
+    top: 0;
+}
+.countdownLogo {
+    height: 5em;
+    width: 9em;
+    display: flex;
+    justify-content: center;
+    
+}
 
 #game{
     background-color: #4198F2;
