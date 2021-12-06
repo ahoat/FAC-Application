@@ -4,24 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Englebert&family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">   
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     
     <title>Document</title>
 </head>
 <body>
-    <div class="navbar">
-        About
-        Why Coding?
-        Why FAC?
-        Let's play...
-    </div>
+    
+        <ul class="navbar" style="list-style: none;">
+            <li><a href="#about">About me</a></li>
+            <li><a href="#whyCoding">Why Coding?</a></li>
+            <li><a href="#whyFAC">Why FAC?</a></li>
+            <li><a href="#letsPlay">Let's play...</a></li>
+        </ul>
+    
 
-    <div class="about">
-        <h3>About</h3>
+    <div id="about">
+        <h3>About me</h3>
         <p>Hi there and thank you for visiting my application to the next FAC cohort.
-            <br>I am Ahoa (ah-ho-ah).  Born in Hong Kong and raised in London, I am an aspiring software developer.
+            <br><br>I am Ahoa (ah-ho-ah).  Born in Hong Kong and raised in London, I am an aspiring software developer.
 
             I am qualified accountant (ACCA) by trade and have held various roles within finance and accounting 
             ranging from Junior Accountant to Financial Controller.  The great thing about being an accountant is that 
@@ -29,12 +31,12 @@
             has given me the opportunity to work in a diverse range of industries such as advertising, travel, property, food manufacturing to name a few.
             <br>After nearly 20 years, parts of the job no longer resonate or motivate me and I have no desire to move up to more senior roles 
             which is why I am looking to change things up and pursue something that I have always wanted to do.....coding!
-            <br>Switching careers is scary.  Especially as I am not only accountable to myself but my family also.  However, I have thought long and hard about taking the dive into a career switch but ultimately 
+            <br><br>Switching careers is scary.  Especially as I am not only accountable to myself but my family also.  However, I have thought long and hard about taking the dive into a career switch but ultimately 
             I decided that if I didn't pursue it, I will always be thinking about it so why not take the leap and see where I land.
         </p>
     </div>
 
-    <div class="whyCoding">
+    <div id="whyCoding">
         <h3>Why Coding?</h3>
         <p>
             My first experience of coding was back in college.  Back then, I was learning a programming language called
@@ -43,18 +45,19 @@
             written would magically appear and do things on the screen.
             To submit our projects for assessment, we had to print out all of our code on a "dot matrix printer".
             For those not old enough to remember, this is what a dot matrix printer looks like:
-            <!--  Insert image of Dot Matrix Printer-->
+            <br><br>
+
             <img id="dotMatImg" src="http://4.bp.blogspot.com/-RFTC841cLCg/VgYmYZXV-tI/AAAAAAAAAJU/Rkz2OxLUFU8/s1600/DotMatrixPrinter.jpg" alt="picture of a   dot matrix printer">
             <br>
 
             We only had 1 of these in our college and if the paper got jammed, we would have to start the print run all 
             over again.  As you can imagine, the queue to use this printer was quite long and it was necessary to watch it print
             out each pixel at a time in case the paper feed got jammed.
-
+            <br>
             Fast forward to today, I wish I had pursued coding and computing.  Instead of thinking 'what if?', I have decided 
             that now is the right time to start.
-            <br>
-            So, back to the question, why coding? <br>
+            <br><br>
+            So, back to the question, why coding? <br><br>
             Technology shapes so much of our modern life and how we interact with each other and the world that I feel 
             it's a skill that everyone should learn.  I see coding as a life skill that I want my children to learn and master.
             My kid's school doesn't currently offer a coding after school club but I hope one day I will be good enough at 
@@ -66,7 +69,7 @@
         </p>
     </div>
 
-    <div class="whyFAC">
+    <div id="whyFAC">
         <h3>Why FAC?</h3>
         <p>
             I first heard of FAC from an old friend who encouraged me to look into it.  I am so glad I did!
@@ -76,18 +79,20 @@
             I celebrated their success so much more than my own, knowing the massive weight it lifts off their shoulders.
             Those moments showed me that anybody can learn anything and I am still a strong believer of that today.
             I really like that current FAC cohorts and alumni are actively involved in mentoring newbies like myself and really hope that
-            I can Pay it Forward (Great movie!) one day.
+            I can pay it <forward></forward> one day.
 
         </p>
     </div>
 
-    
+    <div id="letsPlay">
     <h3>Let's Play...</h3>
         <img class="countdownLogo" src="https://www.dock10.co.uk/assets/img/news/countdown-marks-its-6000th-episode-md.jpg" alt="Countdown Logo">
 
         <p> As an accountant, I like number games and problem solving.  During lockdown I found myself addicted to the daytime
          TV staple, Countdown.  I thought it would be a fun challenge to try and code the math game myself.
-        </p>        
+        </p>  
+    </div>
+    
     <div id="game">
     
     <div class="targetNumber">
@@ -102,7 +107,7 @@
             <li class="num">4th</li>
             <li class="num">5th</li>
             <li class="num">6th</li>
-            </ul>
+        </ul>
     </div>
     <div class="btn">
         <button id="large">Large</button>
@@ -113,6 +118,17 @@
     <br>
     <div class="timer">30 Seconds</div>  <!--Timer-->
     </div>
+
+    
+        <footer>
+            <a href=https://github.com/ahoat">
+            <img  class="publicProfiles" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/240px-Octicons-mark-github.svg.png" alt="github">
+            </a>
+            <a href="https://www.freecodecamp.org/ahoat">
+            <img  class="publicProfiles" src="https://d33wubrfki0l68.cloudfront.net/bbfa33a202e8612d49b6c1ed05c1fdd8e4001566/bbdd1/img/fcc_secondary_small.svg">
+            </a>
+        </footer>
+    
     <script src="script.js"></script>
 </body>
 </html>

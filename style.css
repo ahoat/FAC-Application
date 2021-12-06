@@ -1,6 +1,7 @@
 body {
-    font-family: 'Englebert', sans-serif;
-    background: linear-gradient(90deg,#565D61, #3f87ac);
+    font-family: 'Poppins', sans-serif;
+    background-color:#E8E8E8;
+    /* background: linear-gradient(90deg,#565D61, #3f87ac); */
     
 }
 
@@ -8,15 +9,29 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-
-}
+    gap: 20px;   
+    font-weight: 900;
+    padding: 0.5em;
+    }
 
 h3{
-    background-color: lightgray;
+   
+    background-color: #393e46;
     padding: 1rem;
     border-radius: 10px;
     position: sticky;
     top: 0;
+    color: whitesmoke;
+}
+
+p {
+    padding: 1em;
+}
+#dotMatImg{
+    display: block;
+    width 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .countdownLogo {
     height: 5em;
@@ -68,5 +83,18 @@ h3{
 
 
 
+.publicProfiles{
+    height: 50px;
+    width: 50px;
+    
+}
 
+footer{
+    padding: 5em;
+    border: 1em;
+    margin-top: 1em;
+    background-color: #393e46;
+    display: flex;
+    justify-content: space-evenly;
+}
 
