@@ -12,13 +12,26 @@
 </head>
 <body>
     
-        <ul class="navbar" style="list-style: none;">
+        <ul class="navbar">
             <li><a href="#about">About me</a></li>
             <li><a href="#whyCoding">Why Coding?</a></li>
             <li><a href="#whyFAC">Why FAC?</a></li>
             <li><a href="#letsPlay">Let's play...</a></li>
         </ul>
-    
+
+    <div class="slide_container">    
+        <div class="image_container">
+            <img src="images/budapest.jpg" alt="Budapest" id="firstImg">
+            <img src="images/london.jpg" alt="London" >
+            <img src="images/beijing.jpg" alt="Beijing">
+            <img src="images/hawaii.jpg" alt="Hawaii">
+            <img src="images/chicago.jpg" alt="Chicago">
+            <img src="images/budapest.jpg" alt="Budapest" >
+            <img src="images/london.jpg" alt="London"id="lastImg" >
+        </div>
+    </div>
+    <button id="prevBtn">Previous</button>
+    <button id="nextBtn">Next</button>
 
     <div id="about">
         <h3>About me</h3>
@@ -100,7 +113,7 @@
     </div>
 
     <div id="selectedNumbers">
-        <ul>
+        <ul class="selectedNumbers">
             <li class="num">1st</li>
             <li class="num">2nd</li>
             <li class="num">3rd</li>
@@ -121,14 +134,14 @@
 
     
         <footer>
-            <a href=https://github.com/ahoat">
+            <a href="https://github.com/ahoat">
             <img  class="publicProfiles" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/240px-Octicons-mark-github.svg.png" alt="github">
             </a>
             <a href="https://www.freecodecamp.org/ahoat">
             <img  class="publicProfiles" src="https://d33wubrfki0l68.cloudfront.net/bbfa33a202e8612d49b6c1ed05c1fdd8e4001566/bbdd1/img/fcc_secondary_small.svg">
             </a>
         </footer>
-    
+    <script src="carousel.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

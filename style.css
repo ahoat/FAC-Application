@@ -1,7 +1,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color:#E8E8E8;
-    /* background: linear-gradient(90deg,#565D61, #3f87ac); */
+    margin: 0;
     
 }
 
@@ -9,10 +9,24 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    list-style: none;
     gap: 20px;   
     font-weight: 900;
     padding: 0.5em;
     }
+
+.slide_container {
+    width: 100%;
+    margin: auto;
+    border: 5px solid black;
+    overflow: hidden;
+}
+
+.image_container{
+    display: flex;
+    height: 40%;
+    
+}
 
 h3{
    
@@ -52,13 +66,14 @@ p {
     flex-wrap: wrap;
     justify-content: center;
     
+    
+    
 }
 
 .targetNumber{
     background-color: black;
     color: white;
     display: flex;
-    align-items: flex-start;
     justify-content: center;
     margin: 15px;
     border-radius:15px;
@@ -69,7 +84,13 @@ p {
     
 }
 
-#selectedNumbers li{
+.selectedNumbers{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 10px;
+    
+    
     
     
 }
@@ -90,7 +111,7 @@ p {
 }
 
 footer{
-    padding: 5em;
+    padding: 3em;
     border: 1em;
     margin-top: 1em;
     background-color: #393e46;

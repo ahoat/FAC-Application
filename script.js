@@ -5,6 +5,7 @@ const generate = document.querySelector('#generate');
 const startTimer = document.querySelector('#start');
 const selected = document.querySelectorAll('.num');
 
+
 //create a function that generates a 3 digit random number between 100 and 999
 function randomNumber(min, max) {
     min = Math.ceil(100);
