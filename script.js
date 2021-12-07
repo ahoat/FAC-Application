@@ -22,8 +22,14 @@ let startingSeconds = 30;
 
 function updateCountdown () {
     let seconds = startingSeconds % 60;
+    if (startingSeconds >= 0) {
     countdown.innerText = `${seconds}`
     startingSeconds--;
+    } else {
+     clearInterval(countdown.innerText = "Time Up");}
+
+    
+    
 }
 
 
@@ -72,9 +78,8 @@ generate.addEventListener("click", function () {
     targetNum.innerText = randomNumber();
 });
 
-startTimer.addEventListener("click", function() {
-    setInterval(updateCountdown, 1000);
-  
+startTimer.addEventListener("click", function () {
+    setInterval(updateCountdown, 1000); 
 });
     
 
