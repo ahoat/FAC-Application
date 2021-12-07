@@ -4,7 +4,7 @@ const smallNum = document.querySelector('#small');
 const generate = document.querySelector('#generate');
 const startTimer = document.querySelector('#start');
 const selected = document.querySelectorAll('.num');
-
+const timer = document.querySelector(".timer");
 
 //create a function that generates a 3 digit random number between 100 and 999
 function randomNumber(min, max) {
@@ -14,6 +14,17 @@ function randomNumber(min, max) {
 }
 
 //timer countdown
+
+const countdown = document.querySelector(".seconds");
+let startingSeconds = 30;
+
+// setInterval(updateCountdown, 1000);
+
+function updateCountdown () {
+    let seconds = startingSeconds % 60;
+    countdown.innerText = `${seconds}`
+    startingSeconds--;
+}
 
 
 //Create arrays for the numbers that can be selected
@@ -42,8 +53,6 @@ function selectedLarge () {
     
 }
 
-
-
 function selectedSmall() {
     return smallNumber[randomSmallNumber];
 }
@@ -64,8 +73,11 @@ generate.addEventListener("click", function () {
 });
 
 startTimer.addEventListener("click", function() {
-    console.log("timer click");
+    setInterval(updateCountdown, 1000);
+  
 });
+    
+
 
 largeNum.addEventListener("click", selectedLarge);
 

@@ -105,6 +105,9 @@ p {
     flex-wrap: wrap;
 }
 
+.seconds {
+    font-size: 50px;
+}
 
 
 .publicProfiles{
