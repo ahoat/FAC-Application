@@ -28,8 +28,9 @@ function updateCountdown () {
     } else {
     clearInterval(myTimer);
     countdown.innerText = "Time Up";
-    startTimerBtn.innerText="restart";
-    
+    startTimerBtn.innerText="Restart Timer";
+    // startTime(); 
+      
     } 
 }
 
@@ -41,8 +42,7 @@ startTimerBtn.addEventListener("click", function () {
         startTime();
     } else {  
         seconds = 30;
-    }
-    
+    }    
 });
 
 function startTime() {  
