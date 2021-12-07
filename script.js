@@ -18,18 +18,14 @@ function randomNumber(min, max) {
 const countdown = document.querySelector(".seconds");
 let startingSeconds = 30;
 
-// setInterval(updateCountdown, 1000);
-
 function updateCountdown () {
     let seconds = startingSeconds % 60;
-    if (startingSeconds >= 0) {
-    countdown.innerText = `${seconds}`
+    if (startingSeconds > 0) {
+    countdown.innerText = `${seconds}` + " Seconds"
     startingSeconds--;
     } else {
-     clearInterval(countdown.innerText = "Time Up");}
-
-    
-    
+    countdown.innerText = "Time Up";
+    }
 }
 
 
@@ -79,7 +75,7 @@ generate.addEventListener("click", function () {
 });
 
 startTimer.addEventListener("click", function () {
-    setInterval(updateCountdown, 1000); 
+ setInterval(updateCountdown, 1000); 
 });
     
 
