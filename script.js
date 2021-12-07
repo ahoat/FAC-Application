@@ -56,15 +56,12 @@ let smallNumber = [1,2,3,4,5,6,7,8,9];
 let randomLargeNumber = Math.floor(Math.random() * largeNumber.length);
 let randomSmallNumber = Math.floor(Math.random() * smallNumber.length);
 
-
-
 //when a user clicks the large button, a random large number is generated
 //and put into the first list item, when pressed again, replaces 2nd list item etc.
 
 
 function selectedLarge () {
     let large = largeNumber[randomLargeNumber];
-   
     let li = document.createElement("li");
     let listNum = document.createTextNode(large);
     li.appendChild(listNum);
@@ -72,14 +69,13 @@ function selectedLarge () {
 }
 
 function selectedSmall() {
-    
     let small = (smallNumber[randomSmallNumber]);
     let li = document.createElement("li");
     let listNum = document.createTextNode(small);
     li.appendChild(listNum);
     selected.appendChild(li);
-    
 }
+
 console.log(selectedSmall());
 console.log(selectedLarge());
 
@@ -90,8 +86,6 @@ console.log(selectedLarge());
 //small numbers can be selected multiple times
 //Can only choose up to 6 numbers.  Max 4 large as only 4 large numbers available
 
-
-//add event listener for buttons
 
 largeNumBtn.addEventListener("click", selectedLarge);
  
