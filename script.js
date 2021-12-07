@@ -2,7 +2,7 @@ const targetNum = document.querySelector('.target');
 const largeNum = document.querySelector("#large");
 const smallNum = document.querySelector('#small');
 const generate = document.querySelector('#generate');
-const startTimer = document.querySelector('#start');
+const startTimerBtn = document.querySelector('#start');
 const selected = document.querySelectorAll('.num');
 const timer = document.querySelector(".timer");
 
@@ -12,22 +12,42 @@ function randomNumber(min, max) {
     max = Math.floor(999);
     return Math.floor(Math.random() * (max - min) + min);
 }
-
+ //button to generate random number
+generate.addEventListener("click", function () {
+    targetNum.innerText = randomNumber();
+});
 //timer countdown
 
 const countdown = document.querySelector(".seconds");
-let startingSeconds = 30;
+let seconds = 30;
 
 function updateCountdown () {
-    let seconds = startingSeconds % 60;
-    if (startingSeconds > 0) {
+    if (seconds > 0) {
     countdown.innerText = `${seconds}` + " Seconds"
-    startingSeconds--;
+    seconds--;
     } else {
+    clearInterval(myTimer);
     countdown.innerText = "Time Up";
-    }
+    startTimerBtn.innerText="restart";
+    
+    } 
 }
 
+let myTimer;
+
+startTimerBtn.addEventListener("click", function () {
+    startTimerBtn.innerText="Reset Timer";
+    if (!myTimer) {
+        startTime();
+    } else {  
+        seconds = 30;
+    }
+    
+});
+
+function startTime() {  
+    myTimer = setInterval(updateCountdown, 1000); 
+}
 
 //Create arrays for the numbers that can be selected
 
@@ -70,13 +90,9 @@ console.log (selectedSmall());
 
 //add event listener for buttons
 
-generate.addEventListener("click", function () {
-    targetNum.innerText = randomNumber();
-});
 
-startTimer.addEventListener("click", function () {
- setInterval(updateCountdown, 1000); 
-});
+
+
     
 
 
