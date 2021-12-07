@@ -87,7 +87,7 @@ p {
     
 }
 
-.selectedNumbers{
+.numberList{
     display: flex;
     flex-direction: row;
     list-style: none;

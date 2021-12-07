@@ -1,9 +1,9 @@
 const targetNum = document.querySelector('.target');
-const largeNum = document.querySelector("#large");
-const smallNum = document.querySelector('#small');
+const largeNumBtn = document.querySelector("#large");
+const smallNumBtn = document.querySelector('#small');
 const generate = document.querySelector('#generate');
 const startTimerBtn = document.querySelector('#start');
-const selected = document.querySelectorAll('.num');
+const selected = document.querySelector('.numberList');
 const timer = document.querySelector(".timer");
 
 //create a function that generates a 3 digit random number between 100 and 999
@@ -16,6 +16,7 @@ function randomNumber(min, max) {
 generate.addEventListener("click", function () {
     targetNum.innerText = randomNumber();
 });
+
 //timer countdown
 
 const countdown = document.querySelector(".seconds");
@@ -29,8 +30,7 @@ function updateCountdown () {
     clearInterval(myTimer);
     countdown.innerText = "Time Up";
     startTimerBtn.innerText="Restart Timer";
-    // startTime(); 
-      
+    // startTime();      
     } 
 }
 
@@ -55,7 +55,6 @@ let largeNumber = [25, 50, 75, 100];
 let smallNumber = [1,2,3,4,5,6,7,8,9];
 let randomLargeNumber = Math.floor(Math.random() * largeNumber.length);
 let randomSmallNumber = Math.floor(Math.random() * smallNumber.length);
-let num = [];
 
 
 
@@ -64,21 +63,25 @@ let num = [];
 
 
 function selectedLarge () {
-    if (largeNumber.length === 0) {
-        return "Max";
-    }
-    // for (let i = 4; i > largeNumber.length; i--)
-    // {
-    num = largeNumber.push(randomLargeNumber,1);
-    console.log(num);
-    //  }
-    
+    let large = largeNumber[randomLargeNumber];
+   
+    let li = document.createElement("li");
+    let listNum = document.createTextNode(large);
+    li.appendChild(listNum);
+    selected.appendChild(li);
 }
 
 function selectedSmall() {
-    return smallNumber[randomSmallNumber];
+    
+    let small = (smallNumber[randomSmallNumber]);
+    let li = document.createElement("li");
+    let listNum = document.createTextNode(small);
+    li.appendChild(listNum);
+    selected.appendChild(li);
+    
 }
-console.log (selectedSmall());
+console.log(selectedSmall());
+console.log(selectedLarge());
 
 //Need to add additional rules.  Large numbers can only be selected once.
 //so if 25 is chosen, it can't be chosen again, but can choose 50, 75 or 100
@@ -90,14 +93,6 @@ console.log (selectedSmall());
 
 //add event listener for buttons
 
-
-
-
-    
-
-
-largeNum.addEventListener("click", selectedLarge);
-
-smallNum.addEventListener("click", function() {
-    console.log("Small number click");  
-});
+largeNumBtn.addEventListener("click", selectedLarge);
+ 
+smallNumBtn.addEventListener("click", selectedSmall);
