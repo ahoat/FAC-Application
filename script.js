@@ -28,7 +28,9 @@ function updateCountdown () {
     seconds--;
     } else {
     clearInterval(myTimer);
+    countdown.style.color = "red";
     countdown.innerText = "Time Up";
+    
     startTimerBtn.innerText="Restart Timer";
     // startTime();      
     } 
